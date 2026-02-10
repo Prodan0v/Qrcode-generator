@@ -1,0 +1,9 @@
+import pyqrcode
+import png
+from pyqrcode import QRCode
+
+adress = "mobile.bg"
+
+url = pyqrcode.create(adress)
+
+url.png("test.png", scale=8)
